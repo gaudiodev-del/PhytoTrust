@@ -9,15 +9,15 @@ export const IMPACT_CATS = [
 ];
 
 export const P = {
-  navy:"#0c3060", navy2:"#0a2550", navy3:"#07193a",
-  blue:"#185fa5", blue2:"#1472c4", blueL:"#e6f1fb", blueLL:"#f0f6fd",
-  accent:"#1d9e75", accentL:"#e1f5ee",
+  navy:"#0e4d6e", navy2:"#0c3d58", navy3:"#083344",
+  blue:"#0e7490", blue2:"#0891b2", blueL:"#cffafe", blueLL:"#ecfeff",
+  accent:"#059669", accentL:"#d1fae5",
   gold:"#c8900a", goldL:"#fef3dc",
   red:"#a32d2d", redL:"#fcebeb",
-  bg:"#f4f7fc", bgW:"#ffffff",
-  border:"#ccdaec", border2:"#b0c6e0",
-  txt:"#0d1e30", txt2:"#3a5070", txt3:"#7090b0",
-  badge:"#e6f1fb",
+  bg:"#f0f9ff", bgW:"#ffffff",
+  border:"#bae6fd", border2:"#7dd3fc",
+  txt:"#0c2a3a", txt2:"#1e5068", txt3:"#4d8fa8",
+  badge:"#cffafe",
 };
 
 // ── ISO numeric → ISO2 (para TopoJSON world-atlas) ────────────────────────────

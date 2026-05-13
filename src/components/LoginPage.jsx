@@ -50,7 +50,7 @@ export default function LoginPage({ onLogin }) {
   return (
     <div style={{
       minHeight: "100vh",
-      background: `linear-gradient(145deg, ${P.navy3} 0%, #0a2040 40%, #0d3a6e 100%)`,
+      background: `linear-gradient(145deg, ${P.navy3} 0%, #0c3d58 40%, #0e6680 100%)`,
       display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
       padding: 20, fontFamily: "'Inter','Segoe UI',sans-serif", position: "relative", overflow: "hidden",
     }}>
@@ -70,11 +70,14 @@ export default function LoginPage({ onLogin }) {
         {/* Cabecera */}
         <div style={{ background: "rgba(255,255,255,.05)", borderBottom: "1px solid rgba(255,255,255,.1)", padding: "28px 32px 24px" }}>
           <div style={{ display:"flex", alignItems:"center", gap:14, marginBottom:16 }}>
-            <div style={{
-              width:52, height:52, background:`linear-gradient(135deg, ${P.blue}, ${P.accent})`,
-              borderRadius:12, display:"flex", alignItems:"center", justifyContent:"center",
-              fontSize:26, boxShadow:"0 4px 16px rgba(20,114,196,.4)", flexShrink:0,
-            }}>🌿</div>
+            <svg width="52" height="52" viewBox="0 0 52 52" style={{ flexShrink:0, filter:"drop-shadow(0 4px 12px rgba(8,145,178,.5))" }}>
+              <rect width="52" height="52" rx="12" fill={`linear-gradient(135deg, ${P.blue}, ${P.accent})`}/>
+              <rect width="52" height="52" rx="12" fill="#0e7490"/>
+              <path d="M26,5 L44,11 L44,29 Q44,40 26,47 Q8,40 8,29 L8,11 Z" fill="#0891b2" stroke="#67e8f9" strokeWidth="1"/>
+              <path d="M14,37 Q14,18 36,17 Q35,36 14,37Z" fill="#4ade80" opacity="0.9"/>
+              <line x1="14" y1="37" x2="31" y2="21" stroke="#15803d" strokeWidth="1.2" opacity="0.5"/>
+              <polyline points="15,28 21,35 38,16" fill="none" stroke="#fff" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
             <div>
               <div style={{ fontFamily:"monospace", fontSize:"0.54rem", color:"rgba(170,196,224,.8)", textTransform:"uppercase", letterSpacing:".12em", marginBottom:2 }}>International Phytosanitary Atlas</div>
               <div style={{ fontFamily:"Georgia,serif", fontSize:"1.6rem", color:"#fff", letterSpacing:"-.01em", lineHeight:1 }}>PhytoTrust</div>

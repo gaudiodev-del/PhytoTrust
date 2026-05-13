@@ -383,19 +383,17 @@ export default function PlagaMap() {
         {/* Logo */}
         <div style={{ display:"flex", alignItems:"center", gap:9, flexShrink:0 }}>
           <svg width="30" height="30" viewBox="0 0 30 30">
-            <rect width="30" height="30" rx="7" fill="rgba(255,255,255,.18)"/>
-            <circle cx="14" cy="16" r="11" fill="#1d4ed8" opacity={0.7}/>
-            <ellipse cx="14" cy="16" rx="5" ry="11" fill="none" stroke="rgba(255,255,255,.3)" strokeWidth=".8"/>
-            <line x1="3" y1="16" x2="25" y2="16" stroke="rgba(255,255,255,.3)" strokeWidth=".8"/>
-            <line x1="5" y1="10" x2="23" y2="10" stroke="rgba(255,255,255,.2)" strokeWidth=".6"/>
-            <line x1="5" y1="22" x2="23" y2="22" stroke="rgba(255,255,255,.2)" strokeWidth=".6"/>
-            <circle cx="14" cy="16" r="11" fill="none" stroke="rgba(255,255,255,.4)" strokeWidth=".8"/>
-            <ellipse cx="23" cy="7" rx="3.5" ry="5" fill="#fbbf24" transform="rotate(-30,23,7)"/>
-            <circle cx="21.5" cy="4.2" r="2.5" fill="#fbbf24"/>
-            <circle cx="20.8" cy="3.5" r=".8" fill="#0f172a"/>
-            <circle cx="22.4" cy="3.5" r=".8" fill="#0f172a"/>
-            <line x1="20.5" y1="2.5" x2="18.5" y2="1" stroke="#fbbf24" strokeWidth=".8" strokeLinecap="round"/>
-            <line x1="22.5" y1="2.5" x2="23.5" y2="1" stroke="#fbbf24" strokeWidth=".8" strokeLinecap="round"/>
+            <rect width="30" height="30" rx="7" fill="rgba(255,255,255,.15)"/>
+            {/* Escudo */}
+            <path d="M15,3 L25,7 L25,17 Q25,23 15,27 Q5,23 5,17 L5,7 Z"
+              fill="#0e7490" stroke="#67e8f9" strokeWidth=".8"/>
+            {/* Hoja */}
+            <path d="M9,22 Q9,11 21,10 Q20,21 9,22Z" fill="#4ade80" opacity={0.9}/>
+            <line x1="9" y1="22" x2="18" y2="13" stroke="#15803d" strokeWidth=".8" opacity={0.5}/>
+            {/* Check blanco */}
+            <polyline points="9,16 13,20 22,10"
+              fill="none" stroke="#fff" strokeWidth="2.2"
+              strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
           <span style={{ color:"#fff", fontWeight:700, fontSize:14, letterSpacing:"-.2px", whiteSpace:"nowrap" }}>
             PlagaMap
