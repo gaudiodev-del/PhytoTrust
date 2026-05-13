@@ -76,12 +76,12 @@ export default function LoginPage({ onLogin }) {
               fontSize:26, boxShadow:"0 4px 16px rgba(20,114,196,.4)", flexShrink:0,
             }}>🌿</div>
             <div>
-              <div style={{ fontFamily:"monospace", fontSize:"0.54rem", color:"rgba(170,196,224,.8)", textTransform:"uppercase", letterSpacing:".12em", marginBottom:2 }}>República Argentina · SENASA</div>
-              <div style={{ fontFamily:"Georgia,serif", fontSize:"1.6rem", color:"#fff", letterSpacing:"-.01em", lineHeight:1 }}>FitoFichas</div>
+              <div style={{ fontFamily:"monospace", fontSize:"0.54rem", color:"rgba(170,196,224,.8)", textTransform:"uppercase", letterSpacing:".12em", marginBottom:2 }}>International Phytosanitary Atlas</div>
+              <div style={{ fontFamily:"Georgia,serif", fontSize:"1.6rem", color:"#fff", letterSpacing:"-.01em", lineHeight:1 }}>PhytoTrust</div>
             </div>
           </div>
           <div style={{ fontFamily:"monospace", fontSize:"0.58rem", color:"rgba(170,196,224,.7)", textTransform:"uppercase", letterSpacing:".08em" }}>
-            Sistema Nacional de Fichas Fitosanitarias
+            Global Pest & Disease Records
           </div>
         </div>
 
@@ -90,7 +90,7 @@ export default function LoginPage({ onLogin }) {
           <div style={{ marginBottom:24 }}>
             <div style={{ fontSize:"1.05rem", fontWeight:600, color:"#fff", marginBottom:6 }}>Acceder al sistema</div>
             <div style={{ fontSize:"0.78rem", color:"rgba(170,196,224,.75)", lineHeight:1.5 }}>
-              Ingresá tus credenciales para gestionar las fichas fitosanitarias.
+              Enter your credentials to access the pest records system.
             </div>
           </div>
 
@@ -184,10 +184,10 @@ export default function LoginPage({ onLogin }) {
       {/* Footer */}
       <div style={{ marginTop:28, textAlign:"center" }}>
         <div style={{ fontFamily:"monospace", fontSize:"0.56rem", color:"rgba(112,144,176,.6)", textTransform:"uppercase", letterSpacing:".1em", marginBottom:4 }}>
-          SENASA · Servicio Nacional de Sanidad y Calidad Agroalimentaria
+          PhytoTrust · International Phytosanitary Reference System
         </div>
         <div style={{ fontFamily:"monospace", fontSize:"0.54rem", color:"rgba(112,144,176,.45)", letterSpacing:".06em" }}>
-          Dirección Nacional de Protección Vegetal · Argentina
+          Global Plant Health Surveillance Platform
         </div>
       </div>
 

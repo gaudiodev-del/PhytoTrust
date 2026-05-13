@@ -2,14 +2,17 @@ import { createClient } from '@supabase/supabase-js';
 
 const LS_URL = '_sb_url';
 const LS_KEY = '_sb_key';
-const DOMAIN = '@fitofichas.local'; // sufijo interno para usernames sin @
+const DOMAIN = '@phytotrust.local';
+
+const DEFAULT_URL = 'https://oldarvlnozzdewkeiuxz.supabase.co';
+const DEFAULT_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9sZGFydmxub3p6ZGV3a2VpdXh6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg2NTI4MTksImV4cCI6MjA5NDIyODgxOX0.RVNf81lKy3yGEAaSJ-gIbwR63ByQ8dSty7L3hNptYvU';
 
 let _client = null;
 
 export function sbConfig() {
   return {
-    url: import.meta.env.VITE_SUPABASE_URL || localStorage.getItem(LS_URL) || '',
-    key: import.meta.env.VITE_SUPABASE_ANON_KEY || localStorage.getItem(LS_KEY) || '',
+    url: import.meta.env.VITE_SUPABASE_URL || localStorage.getItem(LS_URL) || DEFAULT_URL,
+    key: import.meta.env.VITE_SUPABASE_ANON_KEY || localStorage.getItem(LS_KEY) || DEFAULT_KEY,
   };
 }
 

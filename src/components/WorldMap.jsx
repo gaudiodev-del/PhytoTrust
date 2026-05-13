@@ -73,7 +73,7 @@ export default function WorldMap({presencia}) {
 
   return (
     <div ref={ref} style={{ background: "#d0e4f0", border: `1px solid ${P.border}`, borderRadius: 8, overflow: "hidden", userSelect: "none", position: "relative" }}>
-      <svg viewBox="0 0 1000 507" style={{ width: "100%", display: "block" }} className="fitofichas-worldmap-svg">
+      <svg viewBox="0 0 1000 507" style={{ width: "100%", display: "block" }} className="phytotrust-worldmap-svg">
         {/* Océano */}
         <rect width={1000} height={507} fill="#b8d0e8" />
 

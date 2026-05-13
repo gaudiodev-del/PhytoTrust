@@ -50,7 +50,7 @@ export default function DBConfig({ onClose, fichas }) {
     try {
       await dbSyncFichas(fichas);
       // Disparar evento para que ArticulosBuscador sincronice sus sets
-      window.dispatchEvent(new CustomEvent("fitofichas:sync-sets"));
+      window.dispatchEvent(new CustomEvent("phytotrust:sync-sets"));
       setMsg({ tipo: "ok", texto: `✓ ${fichas.length} fichas sincronizadas. Los sets de búsqueda también fueron enviados.` });
     } catch (e) {
       setMsg({ tipo: "err", texto: `Error al sincronizar: ${e.message}` });

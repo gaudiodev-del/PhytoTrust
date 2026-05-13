@@ -262,7 +262,7 @@ export default function App() {
             <div style={{ flex: 1 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 6 }}>
                 <div style={{ width: 28, height: 28, background: "rgba(255,255,255,.15)", borderRadius: 5, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14 }}>🌿</div>
-                <span style={{ fontFamily: "monospace", fontSize: "0.58rem", color: "#aac4e0", letterSpacing: ".1em", textTransform: "uppercase" }}>Ficha Fitosanitaria · SENASA · FitoFichas</span>
+                <span style={{ fontFamily: "monospace", fontSize: "0.58rem", color: "#aac4e0", letterSpacing: ".1em", textTransform: "uppercase" }}>Pest Record · PhytoTrust</span>
               </div>
               <div style={{ fontFamily: "Georgia,serif", fontSize: "1.5rem", fontStyle: "italic", color: "#fff", lineHeight: 1.2, marginBottom: 4 }}>{f.nombre_cientifico}</div>
               <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
@@ -353,7 +353,7 @@ export default function App() {
           </div>
           <div style={MACT}>
             <button style={BP} onClick={() => {
-              const svgEl = document.querySelector(".fitofichas-worldmap-svg");
+              const svgEl = document.querySelector(".phytotrust-worldmap-svg");
               const svgStr = svgEl ? new XMLSerializer().serializeToString(svgEl) : "";
               exportPDF(f, svgStr);
             }}>⬇ Exportar PDF</button>
@@ -468,9 +468,9 @@ export default function App() {
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
             <div style={{ width: 40, height: 40, background: "rgba(255,255,255,.12)", borderRadius: 7, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, border: "1px solid rgba(255,255,255,.15)" }}>🌿</div>
             <div>
-              <div style={{ fontFamily: "monospace", fontSize: "0.55rem", color: "#7090b0", textTransform: "uppercase", letterSpacing: ".1em" }}>República Argentina · SENASA</div>
-              <div style={{ fontFamily: "Georgia,serif", fontSize: "1.3rem", color: "#fff" }}>FitoFichas</div>
-              <div style={{ fontFamily: "monospace", fontSize: "0.54rem", color: "#aac4e0", letterSpacing: ".06em" }}>Sistema Nacional de Fichas Fitosanitarias</div>
+              <div style={{ fontFamily: "monospace", fontSize: "0.55rem", color: "#7090b0", textTransform: "uppercase", letterSpacing: ".1em" }}>International Phytosanitary Atlas</div>
+              <div style={{ fontFamily: "Georgia,serif", fontSize: "1.3rem", color: "#fff" }}>PhytoTrust</div>
+              <div style={{ fontFamily: "monospace", fontSize: "0.54rem", color: "#aac4e0", letterSpacing: ".06em" }}>Global Pest & Disease Records</div>
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
@@ -576,7 +576,7 @@ export default function App() {
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 14 }}>
                 <div>
                   <div style={{ fontFamily: "Georgia,serif", fontSize: "1.1rem", color: P.navy, fontWeight: 600 }}>Fichas registradas</div>
-                  <div style={{ fontSize: "0.72rem", color: P.txt3, marginTop: 1 }}>Sistema Nacional de Vigilancia · FitoFichas</div>
+                  <div style={{ fontSize: "0.72rem", color: P.txt3, marginTop: 1 }}>Global Phytosanitary Surveillance · PhytoTrust</div>
                 </div>
                 <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
                   <span style={{ fontFamily: "monospace", fontSize: "0.65rem", color: P.txt2, background: P.blueL, border: `1px solid ${P.border}`, padding: "3px 10px", borderRadius: 20, fontWeight: 600 }}>{fichasFiltradas.length}/{fichas.length} {fichas.length === 1 ? "ficha" : "fichas"}</span>

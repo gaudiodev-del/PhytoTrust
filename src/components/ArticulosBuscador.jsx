@@ -5,7 +5,7 @@ import { dbLoadSets, dbUpsertSet, dbDeleteSet, dbDeleteAllSets, dbLoadEquipos, d
 
 // ── Storage ────────────────────────────────────────────────────────────────────
 const SK_SETS = "agrofichas-search-sets-v2";
-const SK_FAVS = "fitofichas-favoritos-v1";
+const SK_FAVS = "phytotrust-favoritos-v1";
 
 // ── Utilidades ─────────────────────────────────────────────────────────────────
 function genId() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
@@ -681,8 +681,8 @@ export default function ArticulosBuscador({ authUser }) {
     const handler = () => {
       sets.forEach(s => dbUpsertSet(s).catch(() => {}));
     };
-    window.addEventListener("fitofichas:sync-sets", handler);
-    return () => window.removeEventListener("fitofichas:sync-sets", handler);
+    window.addEventListener("phytotrust:sync-sets", handler);
+    return () => window.removeEventListener("phytotrust:sync-sets", handler);
   }, [sets]);
 
   const [keywords, setKeywords] = useState([]);
