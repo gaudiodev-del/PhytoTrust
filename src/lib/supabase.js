@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 
-const LS_URL = '_sb_url';
-const LS_KEY = '_sb_key';
+const LS_URL = '_pt_url';
+const LS_KEY = '_pt_key';
 const DOMAIN = '@phytotrust.local';
 
 const DEFAULT_URL = 'https://oldarvlnozzdewkeiuxz.supabase.co';
