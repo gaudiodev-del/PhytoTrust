@@ -70,14 +70,7 @@ export default function LoginPage({ onLogin }) {
         {/* Cabecera */}
         <div style={{ background: "rgba(255,255,255,.05)", borderBottom: "1px solid rgba(255,255,255,.1)", padding: "28px 32px 24px" }}>
           <div style={{ display:"flex", alignItems:"center", gap:14, marginBottom:16 }}>
-            <svg width="52" height="52" viewBox="0 0 52 52" style={{ flexShrink:0, filter:"drop-shadow(0 4px 12px rgba(8,145,178,.5))" }}>
-              <rect width="52" height="52" rx="12" fill={`linear-gradient(135deg, ${P.blue}, ${P.accent})`}/>
-              <rect width="52" height="52" rx="12" fill="#0e7490"/>
-              <path d="M26,5 L44,11 L44,29 Q44,40 26,47 Q8,40 8,29 L8,11 Z" fill="#0891b2" stroke="#67e8f9" strokeWidth="1"/>
-              <path d="M14,37 Q14,18 36,17 Q35,36 14,37Z" fill="#4ade80" opacity="0.9"/>
-              <line x1="14" y1="37" x2="31" y2="21" stroke="#15803d" strokeWidth="1.2" opacity="0.5"/>
-              <polyline points="15,28 21,35 38,16" fill="none" stroke="#fff" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="PhytoTrust" style={{ width:68, height:68, objectFit:"contain", flexShrink:0, filter:"drop-shadow(0 4px 14px rgba(0,0,0,.35))" }} />
             <div>
               <div style={{ fontFamily:"monospace", fontSize:"0.54rem", color:"rgba(170,196,224,.8)", textTransform:"uppercase", letterSpacing:".12em", marginBottom:2 }}>International Phytosanitary Atlas</div>
               <div style={{ fontFamily:"Georgia,serif", fontSize:"1.6rem", color:"#fff", letterSpacing:"-.01em", lineHeight:1 }}>PhytoTrust</div>

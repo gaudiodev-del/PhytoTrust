@@ -382,19 +382,7 @@ export default function PlagaMap() {
       }}>
         {/* Logo */}
         <div style={{ display:"flex", alignItems:"center", gap:9, flexShrink:0 }}>
-          <svg width="30" height="30" viewBox="0 0 30 30">
-            <rect width="30" height="30" rx="7" fill="rgba(255,255,255,.15)"/>
-            {/* Escudo */}
-            <path d="M15,3 L25,7 L25,17 Q25,23 15,27 Q5,23 5,17 L5,7 Z"
-              fill="#0e7490" stroke="#67e8f9" strokeWidth=".8"/>
-            {/* Hoja */}
-            <path d="M9,22 Q9,11 21,10 Q20,21 9,22Z" fill="#4ade80" opacity={0.9}/>
-            <line x1="9" y1="22" x2="18" y2="13" stroke="#15803d" strokeWidth=".8" opacity={0.5}/>
-            {/* Check blanco */}
-            <polyline points="9,16 13,20 22,10"
-              fill="none" stroke="#fff" strokeWidth="2.2"
-              strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="PhytoTrust" style={{ width:36, height:36, objectFit:"contain" }} />
           <span style={{ color:"#fff", fontWeight:700, fontSize:14, letterSpacing:"-.2px", whiteSpace:"nowrap" }}>
             PlagaMap
             <span style={{ color:"rgba(255,255,255,.45)", fontWeight:400, fontSize:12 }}> · distribución global</span>

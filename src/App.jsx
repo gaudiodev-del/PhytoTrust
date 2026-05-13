@@ -466,13 +466,7 @@ export default function App() {
       <div style={{ background: P.navy3, borderBottom: `3px solid ${P.blue2}` }}>
         <div style={{ background: P.navy, padding: "12px 24px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 10 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <svg width="40" height="40" viewBox="0 0 40 40">
-              <rect width="40" height="40" rx="9" fill="rgba(255,255,255,.15)"/>
-              <path d="M20,4 L34,9 L34,23 Q34,31 20,36 Q6,31 6,23 L6,9 Z" fill="#0e7490" stroke="#67e8f9" strokeWidth="1"/>
-              <path d="M11,29 Q11,14 28,13 Q27,28 11,29Z" fill="#4ade80" opacity="0.9"/>
-              <line x1="11" y1="29" x2="24" y2="17" stroke="#15803d" strokeWidth="1" opacity="0.5"/>
-              <polyline points="12,22 17,27 30,13" fill="none" stroke="#fff" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="PhytoTrust" style={{ width:48, height:48, objectFit:"contain" }} />
             <div>
               <div style={{ fontFamily: "monospace", fontSize: "0.55rem", color: "#7090b0", textTransform: "uppercase", letterSpacing: ".1em" }}>International Phytosanitary Atlas</div>
               <div style={{ fontFamily: "Georgia,serif", fontSize: "1.3rem", color: "#fff" }}>PhytoTrust</div>
